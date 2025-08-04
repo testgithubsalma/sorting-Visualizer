@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AlgoViz – Sorting Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>AlgoViz – Sorting Visualizer</h1>
+
+  <div class="controls">
+    <button onclick="generateArray()">Generate New Array</button>
+
+    <label>Array Size:
+      <input type="range" id="arraySize" min="10" max="100" value="30" onchange="generateArray()">
+    </label>
+
+    <label>Speed:
+      <input type="range" id="speed" min="10" max="300" value="100">
+    </label>
+
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="selectionSort()">Selection Sort</button>
+    <button onclick="insertionSort()">Insertion Sort</button>
+  </div>
+
+  <div id="array-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
